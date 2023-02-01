@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add to cart</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css"
+      integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container-fulid">
+      <div class="row">
+        <div class="col-md-10 col-11 mx-auto">
+          <div class="row mt-5 gx-3">
+            <!-- left side div -->
+            <div
+              class="
+                col-md-12 col-lg-8 col-11
+                mx-auto
+                main_cart
+                mb-lg-0 mb-5
+                shadow
+              "
+            >
+              <div class="card p-4">
+                <h2 class="py-4 fw-bold">cart (2items)</h2>
+                <div class="row">
+                  <!-- card images -->
+                  <div
+                    class="
+                      col-md-5 col-11
+                      mx-auto
+                      bg-light
+                      d-flex
+                      justify-content-center
+                      align-item-center
+                      shadow
+                      product_img
+                    "
+                  >
+                    <img src="./w1.jfif" alt="" class="img-fluid" />
+                  </div>
+                  <!-- cart product details -->
+                  <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                    <div class="row">
+                      <!-- product name -->
+                      <div class="col-6 cart-title">
+                        <h1 class="mb-4 product_name">PirasoWatch</h1>
+                        <p class="mb-2">Band-color:Black</p>
+                        <p class="mb-2">Color:Black</p>
+                        <p class="mb-3">Size-Medium</p>
+                      </div>
+                      <!-- quantiy increemt and decreent -->
+                      <div class="col-6">
+                        <ul class="pagination justify-content-end set_quantity">
+                          <li class="page-item">
+                            <button
+                              class="page-link"
+                              onclick="decreaseNumber('textbox','itemval')"
+                            >
+                              <i class="fas fa-minus"></i>
+                            </button>
+                          </li>
+                          <li class="page-item">
+                            <input
+                              type="text"
+                              class="page-link"
+                              value="0"
+                              id="textbox"
+                            
+                            />
+                          </li>
+                          <li class="page-item">
+                            <button
+                              class="page-link"
+                              onclick="increaseNumber('textbox','itemval')"
+                            >
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- remove move and price -->
+                    <div class="row">
+                      <div
+                        class="
+                          col-8
+                          d-flex
+                          justify-content-lg-between
+                          remove-and-wish
+                        "
+                      >
+                        <p><i class="fas fa-trash-alt"></i>Removeitem</p>
+                        <p><i class="fas fa-heart"></i>movetowishllist</p>
+                      </div>
+                      <div class="col-4 d-flex justify-content-end price_money">
+                        <h3>$<span id="itemval">0.00</span></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- second card -->
+              <div class="card p-4">
+                <div class="row">
+                  <!-- card images -->
+                  <div
+                    class="
+                      col-md-5 col-11
+                      mx-auto
+                      bg-light
+                      d-flex
+                      justify-content-center
+                      align-item-center
+                      shadow
+                      product_img
+                    "
+                  >
+                    <img src="./w1.jfif" alt="" class="img-fluid" />
+                  </div>
+                  <!-- cart product details -->
+                  <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                    <div class="row">
+                      <!-- product name -->
+                      <div class="col-6 cart-title">
+                        <h1 class="mb-4 product_name">TitanWatch</h1>
+                        <p class="mb-2">Band-color:Black</p>
+                        <p class="mb-2">Color:Black</p>
+                        <p class="mb-3">Size-Medium</p>
+                      </div>
+                      <!-- quantiy increemt and decreent -->
+                      <div class="col-6">
+                        <ul class="pagination justify-content-end set_quantity">
+                          <li class="page-item">
+                            <button
+                              class="page-link"
+                              onclick="decreaseNumber('textbox1','itemval1')"
+                            >
+                              <i class="fas fa-minus"></i>
+                            </button>
+                          </li>
+                          <li class="page-item">
+                            <input
+                              type="text"
+                              class="page-link"
+                              value="0"
+                              id="textbox1"
+                            />
+                          </li>
+                          <li class="page-item">
+                            <button
+                              class="page-link"
+                              onclick="increaseNumber('textbox1','itemval1')"
+                            >
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- remove move and price -->
+                    <div class="row">
+                      <div
+                        class="
+                          col-8
+                          d-flex
+                          justify-content-lg-between
+                          remove-and-wish
+                        "
+                      >
+                        <p><i class="fas fa-trash-alt"></i>Removeitem</p>
+                        <p><i class="fas fa-heart"></i>movetowishllist</p>
+                      </div>
+                      <div class="col-4 d-flex justify-content-end price_money">
+                        <h3>$<span id="itemval1">0.00</span></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- right side div -->
+
+            <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+              <div class="right_side p-3 shadow bg-white">
+                <h2 class="Product_name mb-5">Total Amount</h2>
+                <div class="price_indiv d-flex justify-content-between">
+                  <p>Product amount</p>
+                  <p>$<span id="product_total_amt">0.00</span></p>
+                </div>
+                <div class="price_indiv d-flex justify-content-between">
+                  <p>Shipping charge</p>
+                  <p >$<span id="shipping_charge">25.0</span></p>
+                </div>
+
+                <hr />
+                <div class="total-amt d-flex justify-content-between fw-bold">
+                  <p>The total amoount of (inclusing VAT)</p>
+                  <p>$ <span id="total_cart_amt">0.00</span></p>
+                </div>
+                <button class="btn btn-primary text-capitalize">
+                  checkout
+                </button>
+              </div>
+
+              <!-- accordian  discount code part-->
+              <div class="discount_code mt-3 shadow">
+                <div class="card">
+                  <div class="card-body">
+                    <a
+                      class="d-flex justify-content-between"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      Add a discount code(optional)
+                      <span><i class="fas fa-chevron-down pt-1"></i></span>
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                      <div class="mt-3">
+                        <input
+                          type="text"
+                          name=""
+                          id="discount_code1"
+                          class="form-control fw-bold"
+                          placeholder="Enter the code "
+                        />
+                        <span id="error_trw" class="text-dark mt-3"
+                          >code is Watch87</span
+                        >
+                      </div>
+                      <button
+                        class="btn btn-primary btn-sm mt-3"
+                        onclick="discount_code()"
+                      >
+                        Apply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="mt-3 shadow p3 bg-white">
+                <div class="p-2">
+                    <p>Expected delivery date</p>
+                    <p>02/03/2021</p>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--javascrit files   -->
+
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
